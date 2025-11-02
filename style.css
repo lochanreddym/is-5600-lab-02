@@ -150,3 +150,44 @@ max-height: 200px;
 max-width: 400px;
 object-fit: cover;
 }
+/* --- Lab 02 polish --- */
+.user-list li {
+  cursor: pointer;
+  padding: 6px 8px;
+  outline: none;
+}
+.user-list li:focus {
+  outline: 2px solid #8662c7;
+  outline-offset: 0;
+  border-radius: 4px;
+}
+.user-list li.selected {
+  background: #e6efff;
+  border-left: 3px solid #51279b;
+}
+
+.portfolio-list button {
+  cursor: pointer;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+#logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+#logoFallback {
+  width: 64px;
+  height: 64px;
+  display: none;            /* shown programmatically on error */
+  place-items: center;
+  background: #f6f6f6;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-weight: 600;
+}
